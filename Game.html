@@ -3,7 +3,7 @@
 <title>Gamme</title>
 </head>
 <body>
-<canvas id="gamecanvas" width="400" height="400"></canvas>
+<canvas id="gameCanvas" width="400" height="400"></canvas>
     <script>
     var canvas , canvasContext;
         
@@ -15,7 +15,15 @@
         }
     
     function mainloop(){
-        
+        colorRect(0,0,canvas.width,canvas.height,'black');
+           colorRect(0,0,20,20,'red');
     }
+        function colorRect(x,y,w,h,c){
+            canvasContext.fillStyle = c;
+            canvasContext.fillRect(x,y,w,h);
+        }
+        
+        
+        
     </script>
 </body>
